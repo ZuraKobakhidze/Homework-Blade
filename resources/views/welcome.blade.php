@@ -20,3 +20,13 @@
         </div>
     @endforeach
 @endsection
+
+@section('footer')
+    <form>
+        @csrf
+        @method('POST')
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <button type="submit">SUBSCRIBE</button>
+    </form>
+@endsection

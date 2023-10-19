@@ -20,7 +20,7 @@
   }
   
   .user {
-    border: 1px solid rgb(255, 154, 30);
+    border: 1px solid orange;
     padding: 8px;
     border-radius: 4px;
   }
@@ -35,4 +35,33 @@
   
   .user .status.active {
     color: green;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 200px;
+  }
+  
+  button, input {
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: orange;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input {
+    border: 1px solid orange;
+    background-color: transparent;
+    color: white;
   }
