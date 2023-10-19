@@ -14,5 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data = [
+        [
+            'name' => 'John Doe',
+            'photo' => 'john.jpg',
+            'status' => 'Active',
+        ],
+        [
+            'name' => 'Jane Smith',
+            'photo' => 'jane.jpg',
+            'status' => 'Away',
+        ],
+        [
+            'name' => 'Alice Johnson',
+            'photo' => 'alice.jpg',
+            'status' => 'Offline',
+        ],
+    ];
+
+
+    return view('welcome', compact('data'));
 });
