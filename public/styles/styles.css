@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(43, 43, 43, 0.921);
+    background-color: #ececec;
+  }
+
+  header {
+    margin-bottom: 16px;
+  }
+  
+  main {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .user {
+    border: 1px solid orange;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .user p {
+    line-height: 24px;
+  }
+  
+  .user .status {
+    color: red;
+  }
+  
+  .user .status.active {
+    color: green;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 200px;
+  }
+  
+  button, input {
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: orange;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input {
+    border: 1px solid orange;
+    background-color: transparent;
+    color: white;
+  }
